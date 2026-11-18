@@ -6,8 +6,8 @@ A static site for GitHub Pages: a single landing page (`index.html`) plus an Abo
 
 | What | Where |
 |---|---|
-| Brand colors | Top of `styles.css` (`--accent`, `--ink`, `--paper`, ...) |
-| Logo | Replace `assets/logo.svg` (or add `assets/logo.png` and update the `<img>` tags) |
+| Brand colors | Matched to the Sales HQ app. Tokens at top of `styles.css` |
+| Logo | Orange-slice mark from the app, `assets/logo.svg` |
 | Headshots | Jackson done. Add `assets/headshots/olivia.jpg` (portrait, about 4:5). They show up automatically |
 | Business email | `ojmarketingoffice@gmail.com` (also the form `action`, so audit requests go there) |
 | Jackson's phone & personal email | Search for `(801) 000-0000`, `+18010000000` and `jackson.personal@example.com` |
