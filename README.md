@@ -8,8 +8,8 @@ A static site for GitHub Pages: a single landing page (`index.html`) plus an Abo
 |---|---|
 | Brand colors | Top of `styles.css` (`--accent`, `--ink`, `--paper`, ...) |
 | Logo | Replace `assets/logo.svg` (or add `assets/logo.png` and update the `<img>` tags) |
-| Headshots | Add `assets/headshots/jackson.jpg` and `assets/headshots/olivia.jpg` (portrait, about 4:5). They show up automatically |
-| Business email | Search for `hello.ojmarketing@gmail.com` and replace everywhere (including the form `action`) |
+| Headshots | Jackson done. Add `assets/headshots/olivia.jpg` (portrait, about 4:5). They show up automatically |
+| Business email | `ojmarketingoffice@gmail.com` (also the form `action`, so audit requests go there) |
 | Jackson's phone & personal email | Search for `(801) 000-0000`, `+18010000000` and `jackson.personal@example.com` |
 | Bios | `about.html`, the bracketed text |
 
