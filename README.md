@@ -10,7 +10,7 @@ A static site for GitHub Pages: a single landing page (`index.html`) plus an Abo
 | Logo | Orange-slice mark from the app, `assets/logo.svg` |
 | Headshots | Jackson done. Add `assets/headshots/olivia.jpg` (portrait, about 4:5). They show up automatically |
 | Business email | `ojmarketingoffice@gmail.com` (also the form `action`, so audit requests go there) |
-| Jackson's personal email | Search for `jackson.personal@example.com` |
+| Jackson's personal email | Search for `jacksonmcbee14@gmail.com` |
 | Bios | `about.html`, the bracketed text |
 
 ## Audit form
