@@ -19,18 +19,14 @@ The form posts to [FormSubmit](https://formsubmit.co), which emails each submiss
 
 ## Publishing on GitHub Pages
 
-Repo **Settings → Pages → Build and deployment → Deploy from a branch**, pick the branch and `/ (root)`.
-The site will be at `https://jacksonmcbee14-dot.github.io/Oj-Marketing/`.
+The site deploys from the `gh-pages` branch at **https://theojmedia.com/** (the `CNAME` file sets the custom domain).
+The old address `jacksonmcbee14-dot.github.io/Oj-Marketing/` redirects there automatically.
+
+DNS at the registrar: four `A` records on `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153,
+and a `CNAME` on `www` → `jacksonmcbee14-dot.github.io`.
 
 ## SEO notes
 
 - Every page has a unique title, meta description, canonical, share image (`assets/og-image.png`) and schema.org JSON-LD (business, services with prices, people, breadcrumbs).
 - `sitemap.xml` lists every indexable page. `thanks.html` and `404.html` are `noindex`.
 - Olivia's bio in `about.html` is a one-line placeholder marked `TODO`.
-
-## When the custom domain is bought
-
-1. Add it in **Settings → Pages → Custom domain** (GitHub creates a `CNAME` file) and turn on **Enforce HTTPS**.
-2. Replace `https://jacksonmcbee14-dot.github.io/Oj-Marketing/` with `https://YOURDOMAIN/` in every file (canonicals, share tags, schema, sitemap, robots, audit form `_next`).
-3. In `404.html`, change `<base href="/Oj-Marketing/">` to `<base href="/">`.
-4. Add the domain in Google Search Console and submit `https://YOURDOMAIN/sitemap.xml`.
