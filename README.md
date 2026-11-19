@@ -28,5 +28,14 @@ and a `CNAME` on `www` → `jacksonmcbee14-dot.github.io`.
 ## SEO notes
 
 - Every page has a unique title, meta description, canonical, share image (`assets/og-image.png`) and schema.org JSON-LD (business, services with prices, people, breadcrumbs).
-- `sitemap.xml` lists every indexable page. `thanks.html` and `404.html` are `noindex`.
-- Olivia's bio in `about.html` is a one-line placeholder marked `TODO`.
+- Pages with a visible FAQ also carry `FAQPage` JSON-LD. Google stopped showing FAQ rich results in May 2026 but still reads the markup. **If you edit a FAQ, edit the matching JSON-LD in that page's `<head>` too**, so they stay identical.
+- Business hours (Mon–Fri 9 AM–6 PM) appear in the homepage schema, the footer and the contact page. Keep them in sync with Google Business Profile, Bing Places and Yelp.
+- `sitemap.xml` lists every indexable page. `thanks.html` and `404.html` are `noindex`. Update `lastmod` when a page's content changes.
+
+## IndexNow (Bing / Copilot)
+
+`29ad2aa3d598c4e2563621a8da26a5b1.txt` is the IndexNow key file. Don't delete it. After publishing changes, ping Bing so it re-crawls right away:
+
+```
+https://www.bing.com/indexnow?url=https://theojmedia.com/CHANGED-PAGE.html&key=29ad2aa3d598c4e2563621a8da26a5b1
+```
