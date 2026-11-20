@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OJ Marketing Blog</title>
+    <link>https://theojmedia.com/blog.html</link>
+    <atom:link href="https://theojmedia.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Plain-English marketing advice for Utah County small businesses.</description>
+    <language>en-us</language>
+    <item>
+      <title>Google Ads vs. Facebook Ads: Which Should You Run First? [2026 Costs]</title>
+      <link>https://theojmedia.com/google-ads-vs-facebook-ads-utah-county.html</link>
+      <guid>https://theojmedia.com/google-ads-vs-facebook-ads-utah-county.html</guid>
+      <pubDate>Fri, 20 Nov 2026 19:00:00 GMT</pubDate>
+      <description>A Facebook lead costs about $27, a Google lead about $67. Why cheaper isn't always better, and three questions to decide where your first dollar goes.</description>
+    </item>
+  </channel>
+</rss>
