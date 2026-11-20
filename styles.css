@@ -651,3 +651,7 @@ main > article:first-child > :first-child { border-top: 73px solid transparent; 
 }
 main:has(> .cta-band:last-child) + .footer { background: var(--grad-band); padding-top: 32px; }
 .footer a { color: var(--ink); }
+
+/* Footer service-area line (SEO) */
+.footer__areas { flex-basis: 100%; font-size: .85rem; opacity: .9; }
+.footer__areas a { white-space: nowrap; }
