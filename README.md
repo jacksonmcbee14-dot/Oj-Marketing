@@ -7,7 +7,7 @@ A static site for GitHub Pages: home, services hub, one page per service (social
 | What | Where |
 |---|---|
 | Brand colors | Matched to the Sales HQ app. Tokens at top of `styles.css` |
-| Logo | Orange-slice mark from the app, `assets/logo.svg` |
+| Logo | Round cream "oj" badge with lime leaf, `assets/logo.svg` (+ `logo-512.png`, favicons, `og-image.png`) |
 | Headshots | Jackson done. Add `assets/headshots/olivia.jpg` (portrait, about 4:5). They show up automatically |
 | Business email | `ojmarketingoffice@gmail.com` (also the form `action`, so audit requests go there) |
 | Jackson's personal email | Search for `jacksonmcbee14@gmail.com` |
