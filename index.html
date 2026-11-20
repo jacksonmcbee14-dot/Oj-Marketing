@@ -10,7 +10,7 @@
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon-48.png" sizes="48x48" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <meta name="theme-color" content="#3a1a10">
+  <meta name="theme-color" content="#FF4A1C">
 
   <meta property="og:site_name" content="OJ Marketing">
   <meta property="og:locale" content="en_US">
@@ -23,11 +23,9 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="OJ Marketing, marketing that fills your cup. Orem, Utah.">
   <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="preload" href="assets/fonts/Fredoka-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Outfit-Var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=7">
 
   <script type="application/ld+json">
 {
@@ -243,7 +241,7 @@
 <header class="header">
   <div class="wrap header__inner">
     <a class="brand" href="./" aria-label="OJ Marketing home">
-      <img src="assets/logo.svg" alt="" width="40" height="40">
+      <img src="assets/logo.svg" alt="" width="52" height="52">
       <span>OJ Marketing</span>
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
@@ -263,28 +261,31 @@
 
 <!-- HERO -->
   <section class="hero">
+    <div class="vert" aria-hidden="true">UTAH COUNTY</div>
     <div class="wrap hero__grid">
       <div>
+        <div class="sticker" aria-hidden="true">Free audit.<br>No contract!</div>
         <h1><span class="h1-pre" style="display:block">Orem, Utah marketing agency</span>Marketing that fills your <span class="hl">cup.</span></h1>
         <p class="lede">We get people talking about your business.</p>
         <p class="muted" style="max-width:46ch">We're Olivia and Jackson. We run social media, Google and Meta ads, and video for local businesses in Orem and across Utah County, and you work with the two of us directly.</p>
         <div class="hero__actions">
           <a class="btn" href="audit.html">Get your free audit</a>
-          <span class="hero__note">No cost. No contract. Just honest feedback.<br><span lang="pt">Falamos português.</span></span>
+          <a class="btn btn--ghost" href="#menu">See the menu</a>
         </div>
+        <p class="hero__note" style="margin-top:18px">No cost. No contract. Just honest feedback. <b lang="pt">Falamos português.</b></p>
       </div>
       <figure class="founders">
         <a class="founders__pics" href="about.html" aria-label="Meet Olivia and Jackson">
           <img src="assets/headshots/olivia-480.jpg" alt="Olivia Carvalho, co-founder of OJ Marketing" width="480" height="600" fetchpriority="high">
           <img src="assets/headshots/jackson-480.jpg" alt="Jackson McBee, co-founder of OJ Marketing" width="480" height="600">
         </a>
-        <figcaption><b>The O and the J.</b> Olivia Carvalho and Jackson McBee, co-founders. <a href="about.html">Meet us &rarr;</a></figcaption>
+        <figcaption><b>the o and the j.</b> Olivia Carvalho and Jackson McBee, co-founders. <a href="about.html">Meet us &rarr;</a></figcaption>
       </figure>
     </div>
   </section>
 
 <!-- THE MENU -->
-  <section class="section section--dark menu-board">
+  <section class="section menu-board" id="menu">
     <div class="wrap">
       <div class="section-head">
         <div>
@@ -328,7 +329,7 @@
   </section>
 
 <!-- FROM THE BLOG -->
-  <section class="section">
+  <section class="section section--blog">
     <div class="wrap">
       <div class="section-head">
         <div>
@@ -337,7 +338,7 @@
         </div>
         <p class="muted">What we'd tell you over coffee, written down. <a href="blog.html">All posts &rarr;</a></p>
       </div>
-      <a class="post-card post-card--wide" href="google-ads-vs-facebook-ads-utah-county.html">
+      <a class="post-card post-card--wide post-card--feature" href="google-ads-vs-facebook-ads-utah-county.html">
         <span class="post-card__meta"><time datetime="2026-11-20">Nov 20, 2026</time> &middot; Paid ads &middot; 7 min</span>
         <h3 class="post-card__h">Google Ads vs. Facebook Ads: which should you run first?</h3>
         <p>A Facebook lead costs about $27 on average and a Google lead about $67. Here's why cheaper isn't always better, and three questions to decide where your first dollar goes.</p>

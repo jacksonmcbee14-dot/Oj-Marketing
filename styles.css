@@ -1,23 +1,34 @@
+/* Brand fonts, self-hosted (SIL Open Font License, see assets/fonts) */
+@font-face { font-family: "Fredoka"; src: url("assets/fonts/Fredoka-SemiBold.woff") format("woff"); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("assets/fonts/Fredoka-Bold.woff") format("woff"); font-weight: 700 900; font-display: swap; }
+@font-face { font-family: "Outfit"; src: url("assets/fonts/Outfit-Var.woff") format("woff"); font-weight: 400 800; font-display: swap; }
+
 /* =========================================================
    OJ Marketing — site styles
    BRAND COLORS: change these to match the app and the
    whole site updates.
    ========================================================= */
 :root {
-  --ink: #3a1a10;        /* main dark / text */
-  --paper: #f6efe6;      /* page background */
-  --paper-2: #f1e9db;    /* alternate section background */
-  --accent: #e9a274;     /* brand orange (buttons) */
-  --accent-dark: #a8461f;/* burnt orange (highlights, labels) */
-  --gold: #d9a05b;
-  --muted: #6b4a3c;      /* secondary text */
-  --line: #e4d9c6;       /* borders */
-  --white: #fffdf9;
+  --ink: #2B0D07;        /* main dark / text */
+  --paper: #FFF4EC;      /* cream background */
+  --paper-2: #FFE3F5;    /* light pink (bottom of the ombre) */
+  --accent: #5BE33B;     /* lime (buttons, badges, price tags) */
+  --accent-dark: #C2330F;/* deep red-orange (labels, links) */
+  --orange: #FF4A1C;     /* brand red-orange */
+  --pink: #FF3FC8;       /* brand pink */
+  --gold: #FF9A1F;
+  --muted: #5A2312;      /* secondary text */
+  --line: #F2C9B8;       /* borders */
+  --white: #FFFFFF;
+  --grad-hero: linear-gradient(120deg, #FF4A1C 0%, #FF4A1C 35%, #FF3FC8 100%);
+  --grad-ombre: linear-gradient(180deg, #FFF4EC 0%, #FFE3F5 100%);
+  --grad-lime: linear-gradient(120deg, #5BE33B 0%, #5BE33B 50%, #C6F53A 100%);
+  --grad-card: linear-gradient(120deg, #FF4472 0%, #FF3FC8 100%);
 
-  --display: "Oswald", "Arial Narrow", Arial, sans-serif;
-  --body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --display: "Fredoka", "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
+  --body: "Outfit", "Helvetica Neue", Arial, sans-serif;
   --wrap: 1120px;
-  --radius: 10px;
+  --radius: 14px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -421,3 +432,151 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 18px; }
 }
 .hero__grid:has(.founders) { grid-template-columns: 1.2fr 1fr; align-items: center; }
 @media (max-width: 820px) { .hero__grid:has(.founders) { grid-template-columns: 1fr; } }
+
+
+/* =========================================================
+   2026 rebrand: red-orange + pink ombre, lime, cream
+   ========================================================= */
+h1, h2 { font-family: var(--display); font-weight: 700; text-transform: lowercase; letter-spacing: -.015em; }
+h1 { line-height: .95; }
+.h1-pre { text-transform: uppercase; font-family: var(--body); letter-spacing: .14em; }
+.kicker { font-weight: 800; letter-spacing: .18em; }
+
+/* Buttons: lime pills with a hard shadow; ghost = cream pill */
+.btn { border-radius: 999px; background: var(--accent); font-weight: 700; }
+.btn--ghost { background: var(--paper); box-shadow: 4px 4px 0 var(--ink); }
+.btn--ghost:hover { background: var(--paper); color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-1px, -1px); }
+
+/* Header */
+.header { background: var(--orange); border-bottom: 2px solid var(--ink); }
+.brand { font-family: var(--display); font-weight: 700; text-transform: lowercase; letter-spacing: -.01em; font-size: 1.55rem; }
+.brand img { width: 52px; height: 52px; }
+.nav a:not(.btn):hover { color: var(--paper); }
+.nav a[aria-current="page"]:not(.btn) { color: var(--ink); box-shadow: inset 0 -3px 0 var(--paper); }
+.menu-toggle { background: var(--paper); border-radius: 999px; }
+@media (max-width: 820px) {
+  .nav { background: var(--orange); border-bottom: 2px solid var(--ink); }
+  .nav a { border-bottom-color: rgba(43,13,7,.25); }
+  .nav a[aria-current="page"]:not(.btn) { box-shadow: none; text-decoration: underline; }
+}
+
+/* Heroes: orange-to-pink gradient on every page */
+.hero { background: var(--grad-hero); border-bottom: 2px solid var(--ink); position: relative; overflow: hidden; }
+.hero .muted, .hero .lede.muted, .hero__note { color: #43150A; }
+.hero .kicker, .hero .h1-pre { color: var(--ink); }
+.hero h1 .hl { color: var(--paper); }
+.hero .kicker a { color: var(--ink); }
+
+/* Sections */
+.section--alt { background: var(--grad-ombre); }
+.section--dark { background: var(--grad-lime); color: var(--ink); border-top: 2px solid var(--ink); }
+.section--dark .muted { color: var(--muted); }
+.section--dark .kicker { color: var(--ink); }
+.section--dark .btn { background: var(--paper); }
+.step { border-top-color: var(--ink); }
+.step::before { color: var(--ink); }
+.contact__list { border-top-color: var(--ink); }
+.contact__list li { border-bottom-color: rgba(43,13,7,.25); }
+.contact__list .label { color: var(--muted); }
+.contact__list a:hover { color: var(--accent-dark); }
+
+/* Cards, forms, stats */
+.teaser, .post-card, .form { border-radius: 24px; }
+.teaser:hover, .post-card:hover { box-shadow: 6px 6px 0 var(--accent); }
+.form { box-shadow: 8px 8px 0 var(--pink); }
+.stat { border-left-color: var(--pink); }
+.stat b { font-family: var(--display); }
+.service__num, .menu__price { font-family: var(--display); }
+.service__num { color: var(--orange); }
+.services, .faq, .strip, .facts, .values { border-top-color: var(--ink); }
+.faq summary::after { color: var(--pink); }
+.person__photo { border-radius: 28px; box-shadow: 8px 8px 0 var(--pink); }
+
+/* Footer */
+.footer { background: var(--orange); color: var(--ink); border-top: 2px solid var(--ink); font-weight: 500; }
+.footer a { color: var(--ink); }
+
+/* ---------- Homepage hero extras ---------- */
+.hero__grid:has(.founders) { padding-left: 64px; }
+.vert {
+  position: absolute; left: max(0px, calc(50% - 600px)); bottom: 70px;
+  transform: rotate(-90deg); transform-origin: left bottom; translate: 64px 0;
+  font-family: var(--body); font-weight: 800; font-size: 64px; letter-spacing: 2px; line-height: 1;
+  color: var(--accent); white-space: nowrap; pointer-events: none;
+}
+.sticker {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  width: 150px; height: 150px; border-radius: 50%;
+  background: var(--accent); color: var(--ink);
+  border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
+  font-family: var(--display); font-weight: 600; font-size: 21px; line-height: 1.1;
+  transform: rotate(-10deg); margin: 0 0 22px;
+}
+.founders__pics img { border-radius: 28px; border-width: 3px; box-shadow: 8px 8px 0 var(--paper); }
+.founders figcaption, .founders figcaption a { color: #43150A; }
+.founders figcaption b { color: var(--ink); text-transform: lowercase; font-family: var(--display); font-size: 1.05rem; }
+.founders figcaption a { color: var(--ink); text-decoration: underline; }
+@media (max-width: 820px) {
+  .hero__grid:has(.founders) { padding-left: 20px; }
+  .vert { display: none; }
+  .sticker { width: 120px; height: 120px; font-size: 17px; }
+}
+
+/* ---------- Homepage menu: cream-to-pink ombre with lime price tags ---------- */
+.menu-board { background: var(--grad-ombre); color: var(--ink); border-top: 0; }
+.menu-board .kicker { color: var(--accent-dark); }
+.menu-board .muted { color: var(--muted); }
+.menu { border-top: 3px solid var(--ink); }
+.menu li { border-bottom: 2px dashed #FF9A7E; }
+.menu a { grid-template-columns: minmax(0, 1fr) auto; align-items: center; padding: 24px 0; }
+.menu__dots { display: none; }
+.menu__item b { font-family: var(--display); text-transform: lowercase; font-weight: 600; color: var(--ink); }
+.menu__item small { color: var(--muted); }
+.menu a:hover .menu__item b { color: var(--accent-dark); }
+.menu__price {
+  background: var(--accent); color: var(--ink); border: 2px solid var(--ink); border-radius: 999px;
+  padding: 12px 22px; box-shadow: 4px 4px 0 var(--ink); font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+.menu__price small { color: var(--ink); font-family: var(--body); }
+.menu__price--sm { font-size: 1.2rem; font-family: var(--display); }
+.menu__note { color: var(--muted); }
+.menu__note a { color: var(--accent-dark); }
+@media (max-width: 820px) { .menu__price { justify-self: start; } }
+
+/* ---------- Blog teaser + cards ---------- */
+.section--blog { background: var(--grad-ombre); border-top: 2px solid var(--ink); }
+.post-card--feature {
+  background: var(--grad-card); border: 3px solid var(--ink); border-radius: 28px;
+  box-shadow: 0 0 0 6px var(--accent), 10px 10px 0 6px var(--ink);
+}
+.post-card--feature:hover { box-shadow: 0 0 0 6px var(--accent), 12px 12px 0 6px var(--ink); }
+.post-card--feature p, .post-card--feature .post-card__meta, .post-card--feature .teaser__go { color: var(--ink); }
+.post-card__h, .post-card h2 { font-family: var(--display); font-weight: 600; text-transform: none; }
+
+/* ---------- Blog post ---------- */
+.answer { background: var(--paper-2); color: var(--ink); border: 2px solid var(--ink); border-radius: 24px; box-shadow: 6px 6px 0 var(--pink); }
+.answer .kicker { color: var(--accent-dark); }
+.answer a { color: var(--accent-dark); }
+.prose h2 { font-family: var(--display); text-transform: none; font-weight: 600; }
+.prose a { color: var(--accent-dark); }
+.bars .bar--g { background: var(--orange); color: var(--ink); }
+.bars .bar--m { background: var(--pink); color: var(--ink); }
+.legend .g::before { background: var(--orange); }
+.legend .m::before { background: var(--pink); }
+.callout { border-left-color: var(--accent); border-radius: 0 14px 14px 0; }
+.byline img { border-radius: 50%; }
+
+/* Mobile action bar */
+@media (max-width: 820px) {
+  .actionbar { background: var(--orange); }
+  .actionbar a { border-radius: 999px; }
+  .actionbar .call { background: var(--paper); }
+  .actionbar .go { background: var(--accent); }
+}
+/* Top sections that aren't .hero still get the gradient */
+.section--first, .section--dark.section--first { background: var(--grad-hero); border-top: 0; border-bottom: 2px solid var(--ink); }
+.section--first .kicker { color: var(--ink); }
+.section--first .muted, .section--first .lede { color: #43150A; }
+.hero__note b, .hero__note [lang="pt"] { color: var(--ink); font-weight: 700; }
+#form .audit__list li { border-top-color: rgba(43,13,7,.2); }
+#form .audit__list li::before { border-color: var(--ink); }
