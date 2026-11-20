@@ -490,7 +490,7 @@ h1 { line-height: .95; }
 .service__num { color: var(--orange); }
 .services, .faq, .strip, .facts, .values { border-top-color: var(--ink); }
 .faq summary::after { color: var(--pink); }
-.person__photo { border-radius: 28px; box-shadow: 8px 8px 0 var(--pink); }
+.person__photo { border-radius: 28px; box-shadow: 8px 8px 0 var(--accent); }
 
 /* Footer */
 .footer { background: var(--orange); color: var(--ink); border-top: 2px solid var(--ink); font-weight: 500; }
