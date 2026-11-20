@@ -636,3 +636,18 @@ main > :first-child { border-top: 73px solid transparent; background-origin: bor
 main > article:first-child { border-top: 0; }
 main > article:first-child > :first-child { border-top: 73px solid transparent; background-origin: border-box; }
 @media (max-width: 820px) { .nav { background: var(--paper); } }
+
+/* ---------- Page bottoms: cream melts into the orange-to-pink, footer continues it ---------- */
+:root { --grad-band: linear-gradient(90deg, #FF4A1C 0%, #FF4A1C 30%, #FF3FC8 100%); }
+.cta-band.section--dark {
+  background: linear-gradient(180deg, var(--paper) 0%, rgba(255,244,236,.55) 35%, rgba(255,244,236,0) 75%), var(--grad-band);
+  padding-top: 120px; padding-bottom: 80px;
+}
+.cta-band.section--dark .btn { background: var(--accent); }
+.cta-band h2 { color: var(--ink); }
+.footer {
+  background: linear-gradient(180deg, var(--paper) 0%, rgba(255,244,236,0) 100%) top / 100% 90px no-repeat, var(--grad-band);
+  padding-top: 96px; color: var(--ink);
+}
+main:has(> .cta-band:last-child) + .footer { background: var(--grad-band); padding-top: 32px; }
+.footer a { color: var(--ink); }
