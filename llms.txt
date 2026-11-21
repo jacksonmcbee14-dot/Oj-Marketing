@@ -1,0 +1,27 @@
+# OJ Marketing
+
+> OJ Marketing is a marketing agency in Orem, Utah, run by its two founders, Olivia and Jackson. We help local businesses in Orem and Utah County with social media management, Google and Meta ads, and video content. Every engagement starts with a free marketing audit.
+
+- Location: Orem, Utah 84058 (serving Orem, Provo and the rest of Utah County)
+- Phone: +1 385-543-5155
+- Email: ojmarketingoffice@gmail.com
+- Hours: Monday to Friday, 9am to 6pm (Mountain Time)
+
+## Services
+
+- [Services overview](https://theojmedia.com/services.html): What OJ Marketing offers local businesses
+- [Social media marketing](https://theojmedia.com/social-media-marketing-orem.html): Social media management for Orem and Utah County businesses
+- [Google and Meta ads](https://theojmedia.com/google-meta-ads-orem.html): Paid search and paid social campaigns
+- [Video production](https://theojmedia.com/video-production-orem.html): Video content, priced per project
+- [Pricing](https://theojmedia.com/pricing.html): Social media management and paid ads are each $1,000 per month, month to month
+- [Free marketing audit](https://theojmedia.com/audit.html): The free first step for new clients
+
+## Company
+
+- [About](https://theojmedia.com/about.html): The founders and how the agency works
+- [Contact](https://theojmedia.com/contact.html): How to reach OJ Marketing
+
+## Blog
+
+- [Blog](https://theojmedia.com/blog.html): Marketing guides for Utah County businesses
+- [Google Ads vs Facebook Ads in Utah County](https://theojmedia.com/google-ads-vs-facebook-ads-utah-county.html): Which ad platform fits a local business
